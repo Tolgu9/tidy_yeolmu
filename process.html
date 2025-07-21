@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진행 절차 - 열무정리수납</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --color-primary: #4F46E5;
+            --color-accent: #7C3AED;
+            --color-text: #1F2937;
+            --color-background: #F9FAFB;
+            --color-background-alt: #F3F4F6;
+            --color-secondary: #E5E7EB;
+            --color-button: #7C3AED;
+        }
+
+        body {
+            font-family: '윤고딕705', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--color-text);
+            font-weight: 600;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--color-accent);
+        }
+
+        .btn-primary {
+            background-color: var(--color-button);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-accent);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="열무정리수납_2.1.html" class="text-xl font-bold text-gray-800">
+                        열무정리수납
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="열무정리수납_2.1.html" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">홈</a>
+                        <a href="pricing.html" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">요금 안내</a>
+                        <a href="sorting-service.html" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">물건 추리기</a>
+                        <a href="recommend.html" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">정리 레슨</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="section-title text-3xl mb-12">맞춤형 정리 컨설팅 진행 절차</h1>
+
+            <!-- 1번부터 5번까지 가로 나열 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-clipboard-list mr-3 text-xl" style="color: var(--color-accent);"></i>
+                        <h3 class="text-lg font-semibold" style="color: var(--color-text);">1. 사전 정보 접수</h3>
+                    </div>
+                    <ul class="list-disc pl-4 space-y-2 text-gray-700">
+                        <li>고객님께 공간 사진, 면적, 불편 사항을 간단히 상의합니다.</li>
+                        <li>확인 후, 방문 상담 일정을 조율합니다.</li>
+                        <li>사진은 카카오톡 채널 채팅방으로 전송 가능합니다.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-home mr-3 text-xl" style="color: var(--color-accent);"></i>
+                        <h3 class="text-lg font-semibold" style="color: var(--color-text);">2. 방문 상담 (30~60분)</h3>
+                    </div>
+                    <ul class="list-disc pl-4 space-y-2 text-gray-700">
+                        <li>물건의 양, 동선, 가구 배치 등을 현장에서 점검합니다.</li>
+                        <li>고객님의 목표와 예산, 원하는 공간 스타일을 함께 논의합니다.</li>
+                        <li>상담은 무상으로 진행되며, 부담 없이 문의하셔도 좋습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-file-invoice mr-3 text-xl" style="color: var(--color-accent);"></i>
+                        <h3 class="text-lg font-semibold" style="color: var(--color-text);">3. 견적 제안 및 정리 계획 안내</h3>
+                    </div>
+                    <ul class="list-disc pl-4 space-y-2 text-gray-700">
+                        <li>맞춤 단가표를 기준으로 정확한 견적을 안내드립니다.</li>
+                        <li>필요 인원 및 예상 작업 일수, 진행 범위를 상세히 설명드립니다.</li>
+                        <li>정리 계획안을 함께 드리며 고객의 피드백을 반영합니다.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calendar-alt mr-3 text-xl" style="color: var(--color-accent);"></i>
+                        <h3 class="text-lg font-semibold" style="color: var(--color-text);">4. 일정 및 서비스 확정</h3>
+                    </div>
+                    <ul class="list-disc pl-4 space-y-2 text-gray-700">
+                        <li>고객님과 함께 작업 날짜를 확정합니다.</li>
+                        <li>사전 준비사항(예: 분류 여부, 폐기물 처리 등)을 안내드립니다.</li>
+                        <li>예약금 5만 원 입금 후 예약이 완료됩니다.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-paint-roller mr-3 text-xl" style="color: var(--color-accent);"></i>
+                        <h3 class="text-lg font-semibold" style="color: var(--color-text);">5. 정리 컨설팅 서비스 실행</h3>
+                    </div>
+                    <ul class="list-disc pl-4 space-y-2 text-gray-700">
+                        <li>1차: 분류 및 버리기, 2차: 수납 및 배치 순으로 진행됩니다.</li>
+                        <li>1일 정리의 경우 모든 과정이 하루만에 진행되며 2일 정리의 경우 1차, 2차를 적절히 나누어 진행하게 됩니다.</li>
+                        <li>물건 재배치, 공간 동선 개선, 수납 솔루션 적용이 포함됩니다.</li>
+                        <li>기부 가능 물품은 별도 포장 가능하며, 고객번호로 세금 공제용 기부 영수증 발급 안내도 도와드립니다.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 추가 안내 -->
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <div class="flex items-start">
+                    <i class="fas fa-info-circle mr-3 text-blue-600 mt-1"></i>
+                    <div>
+                        <h4 class="text-lg font-semibold text-blue-800 mb-2">안내사항</h4>
+                        <ul class="list-disc pl-4 space-y-1 text-blue-700">
+                            <li>상담은 무료로 진행되며, 부담 없이 문의하셔도 좋습니다.</li>
+                            <li>사전 준비사항이 있으시면 상담 시 안내드립니다.</li>
+                            <li>작업 일정은 고객님의 일정에 맞춰 조율 가능합니다.</li>
+                            <li>기부 및 폐기물 처리는 별도 비용이 발생할 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 문의하기 버튼 -->
+            <div class="text-center mt-12">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdo8CI8w3rg2NP8LrIT7iqAPZt0L-MAolcO49k-jOdvYs4FiQ/viewform" target="_blank"
+                    class="btn-primary px-8 py-3 rounded-lg inline-flex items-center font-medium text-lg transition-all duration-300 hover:transform hover:scale-105">
+                    <i class="fas fa-envelope mr-2"></i>
+                    무료 상담 받기
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">열무정리수납</h3>
+                    <p class="text-gray-300 text-sm">
+                        전문적인 정리 컨설팅으로<br>
+                        당신의 공간을 새롭게 만들어드립니다.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-md font-semibold mb-4">서비스</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="pricing.html" class="hover:text-white">요금 안내</a></li>
+                        <li><a href="sorting-service.html" class="hover:text-white">물건 추리기</a></li>
+                        <li><a href="recommend.html" class="hover:text-white">정리 레슨</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-md font-semibold mb-4">연락처</h4>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>카카오톡 채널</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>서울 전 지역</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2024 열무정리수납. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
